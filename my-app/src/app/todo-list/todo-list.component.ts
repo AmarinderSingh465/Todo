@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Todo {
-  title: string;
-  completed: boolean;
-}
+import { Todo } from 'src/assets/shared/list';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-todo-list',
@@ -15,6 +12,7 @@ export class TodoListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
   todos: Todo[] = [
     { title: 'Learn Angular', completed: false },
