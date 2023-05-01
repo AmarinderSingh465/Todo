@@ -1,1 +1,14 @@
-<p>todo-list works!</p>
+<h2>To-Do List</h2>
+<form (ngSubmit)="addTodo()">
+  <input type="text" [(ngModel)]="newTodo" name="newTodo" placeholder="Add new to-do item">
+  <button type="submit">Add</button>
+</form>
+<ul>
+  <li *ngFor="let todo of todos">
+    <label [ngClass]="{'completed': todo.completed}">
+      <input type="checkbox" [(ngModel)]="todo.completed" name="completed" (click)="toggleCompleted(todo)">
+      {{ todo.title }}
+    </label>
+    <button (click)="deleteTodo(todo)">Delete</button>
+  </li>
+</ul>
