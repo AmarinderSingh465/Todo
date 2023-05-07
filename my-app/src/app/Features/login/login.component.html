@@ -1,5 +1,17 @@
 <h2>Login</h2>
-<form (ngSubmit)="login()">
-  <!-- login form code here -->
-  <button type="button" (click)="register()">Register</button>
+<form >
+  <div>
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" [(ngModel)]="email">
+  </div>
+  <div>
+    <label for="exampleInputPassword1" class="form-label" >Password:</label>
+    <input type="password" class="form-control" name="password"  [(ngModel)]="password">
+  </div>
+  <button type= "button" class= "btn btn-info" (click)="login()" >Login</button>
 </form>
+
+<button type="button" (click)="register()">Register</button>
+
+
+

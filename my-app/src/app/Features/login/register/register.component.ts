@@ -1,36 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from 'src/environments/environment';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AuthService } from 'src/app/shared/auth.service';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+
   email: string = '';
   password: string = '';
  
-  constructor(private router: Router, private auth: AngularFireAuth) {}
+  constructor(private router: Router, private auth: AuthService) {}
 
-  async register() {
-    try {
-      const userCredential = await this.auth.createUserWithEmailAndPassword(
-        this.email,
-        this.password
-      );
-      console.log(userCredential);
-      this.router.navigate(['/']);
-    } catch (err) {
-      console.error(err);
-    }
+  register() {
+    
+    if(this.email ==''){
+    alert('enter all values!')
+    return;
   }
-
-  login() {
-    this.router.navigate(['/']);
+    if(this.password ==''){
+      alert('enter all values!')
+      return;
+    }
+    this.auth.register(this.email,this.password);
+    this.email='';
+    this.password='';
   }
   ngOnInit(): void {
   }
-
 }
