@@ -16,9 +16,9 @@ export class AuthService {
         localStorage.setItem('token','true');
         this.router.navigate(['/List']);
       })
-      .catch((error) => {
+      .catch((err) => {
         // An error occurred during login
-       alert('something went wrong! ');
+        alert(err.message);
       });
   }
   
