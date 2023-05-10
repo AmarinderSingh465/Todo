@@ -10,6 +10,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { LoginComponent } from './Features/login/login.component';
 import { RegisterComponent } from './Features/login/register/register.component';
 import { environment } from 'src/environments/environment';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { environment } from 'src/environments/environment';
     TodoListComponent,
     LoginComponent,
     RegisterComponent,
+    AboutMeComponent,
     
   ],
   imports: [
