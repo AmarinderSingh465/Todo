@@ -1,10 +1,12 @@
 <nav>
   <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li *ngIf="!auth.loggedIn"><a routerLink="/login">Login</a></li>
-    <li *ngIf="!auth.loggedIn"><a routerLink="/register">Register</a></li>
-    <li *ngIf="auth.loggedIn"><a (click)="logout()">Logout</a></li>
-    <li><a routerLink="/about">About Us</a></li>
+    <div class="nav">
+      <li><a routerLink="/">Home</a></li>
+      <li *ngIf="!auth.loggedIn"><a routerLink="/login">Login</a></li>
+      <li *ngIf="!auth.loggedIn"><a routerLink="/register">Register</a></li>
+      <li *ngIf="auth.loggedIn"><a (click)="logout()">Logout</a></li>
+      <li><a routerLink="/about">About Us</a></li>
+    </div>
   </ul>
 </nav>
 <router-outlet></router-outlet>
