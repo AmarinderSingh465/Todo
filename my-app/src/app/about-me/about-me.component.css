@@ -10,14 +10,11 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
   }
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-  }
   
+  .flex-item-first
+  {
+
+  }
   .flex-container-row {
     display: flex;
     flex-wrap: nowrap;
@@ -37,16 +34,19 @@ body {
     padding: 10px;
     min-height: 250px;
     min-width: 350px;
-    text-align: left;
+    align-items: center;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+   
   }
+ 
+  
   .member-name {
     color: White;
     font-weight: bold;
     font-size: 30px;
+    padding:40px;
   }
   .member-details {
     color: #ffffff;
