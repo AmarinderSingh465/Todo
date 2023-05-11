@@ -1,0 +1,33 @@
+ html {
+     box-sizing: border-box;
+}
+
+*{
+     box-sizing: inherit;
+}
+
+/* Body width fixing */
+ body {
+     max-width: 100%;
+     text-align: center;
+}
+ 
+
+ .column {
+     float: left;
+     width: 49%;
+     margin: 5px;
+     padding: 5px;
+}
+/* box design */
+ .box {
+     background-color: #e6e6fa;
+     border: 1.5px solid black;
+}
+/* Icon */
+ .fa {
+    font-size: 65px;
+     margin: 10px;
+     font-size:68px;
+}
+ 
