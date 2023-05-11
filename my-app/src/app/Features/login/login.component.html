@@ -1,17 +1,23 @@
-<h2>Login</h2>
-<form >
-  <div>
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" name="email" class="form-control" [(ngModel)]="email">
-  </div>
-  <div>
-    <label for="exampleInputPassword1" class="form-label" >Password:</label>
-    <input type="password" class="form-control" name="password"  [(ngModel)]="password">
-  </div>
-  <button type= "button" class= "btn btn-info" (click)="login()" >Login</button>
-</form>
-
-<button type="button" (click)="register()">Register</button>
-
-
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href=
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form>
+      <div class="img">
+        <i class="fa fa-user-circle"></i>
+      </div>
+      <div class="container">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" [(ngModel)]="email">
+        <label for="exampleInputPassword1" class="form-label" >Password:</label>
+        <input type="password" class="form-control" name="password"  [(ngModel)]="password">
+        <button type= "button" class= "btn btn-info" (click)="login()" >Login</button>
+        <button type="button" (click)="register()">New User?</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,17 +1,27 @@
-<h2>register</h2>
-<form >
-  <div>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href=
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <h2>Register</h2>
+<form>
+  <div class="img">
+        <i class="fa fa-user-circle"></i>
+      </div>
+  <div class="container">
     <label for="exampleInputEmail1" class="form-label">Email</label>
     <input type="email" name="email" class="form-control" [(ngModel)]="email">
-  </div>
-  <div>
+
     <label for="exampleInputPassword1" class="form-label" >Password:</label>
     <input type="password" class="form-control" name="password"  [(ngModel)]="password">
   </div>
-  <button type= "button" class= "btn btn-info" (click)="register()" >register</button>
+  <button type= "button" class= "btn btn-info" (click)="register()" >Register</button>
+ 
 </form>
-
-
-
+</body>
+</html>
 
 
