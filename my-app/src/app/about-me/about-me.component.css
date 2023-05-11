@@ -1,33 +1,91 @@
- html {
-     box-sizing: border-box;
-}
-
-*{
-     box-sizing: inherit;
-}
-
-/* Body width fixing */
- body {
-     max-width: 100%;
-     text-align: center;
-}
- 
-
- .column {
-     float: left;
-     width: 49%;
-     margin: 5px;
-     padding: 5px;
-}
-/* box design */
- .box {
-     background-color: #e6e6fa;
-     border: 1.5px solid black;
-}
-/* Icon */
- .fa {
-    font-size: 65px;
-     margin: 10px;
-     font-size:68px;
-}
- 
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+  }
+  
+  .flex-container-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .flex-item {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .member-info {
+    background-color: #7758d1;
+    padding: 10px;
+    min-height: 250px;
+    min-width: 350px;
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .member-name {
+    color: White;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .member-details {
+    color: #ffffff;
+  }
+  .member-role {
+    font-size: 25px;
+    color: #f7f7f7;
+  }
+  
+  .member-links {
+    align-self: flex-end;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 1024px) {
+    .member-info {
+      min-width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .member-info {
+      min-width: 90%;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px;
+    }
+    .member-name {
+      font-size: 24px;
+    }
+    .member-role {
+      font-size: 20px;
+    }
+  }
+  
