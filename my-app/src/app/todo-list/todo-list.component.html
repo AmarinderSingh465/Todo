@@ -5,8 +5,9 @@
 </form>
 <ul>
   <li *ngFor="let todo of todos">
-    <label [ngClass]="{'completed': todo.completed}">
+    <label class="container" [ngClass]="{'completed': todo.completed}">
       <input type="checkbox" [(ngModel)]="todo.completed" name="completed" (click)="toggleCompleted(todo)">
+      <span class="checkmark"></span>
       {{ todo.title }}
     </label>
     <button (click)="deleteTodo(todo)">Delete</button>

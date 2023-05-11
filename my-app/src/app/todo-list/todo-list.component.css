@@ -1,81 +1,131 @@
 h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  form {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  
-  input[type="text"] {
-    flex-grow: 1;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    border-radius: 0;
-  }
-  
-  input[type="text"]:focus {
-    outline: none;
-    border-bottom-color: #333;
-  }
-  
-  button[type="submit"] {
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-  
-  label {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-  }
-  
-  input[type="checkbox"] {
-    margin-right: 1rem;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
-  }
-  
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #ccc;
-  }
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 11px;
+}
+
+button[type="submit"] {
+  background-color: #57b557;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 28.5px;
+  margin-right: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #15a115;
+}
+
+ul {
+  padding: 0px;
+}
+
+ul li {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+label {
+  display: flex;
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  color: white;
+  background-color: black; /* set background-color on the label element */
+  border-radius: 5px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  left: 5px;
+  margin: 0;
+  width: 0.9em;
+  height: 0.9em;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: #fff;
+}
+
+button {
+  background-color: #ff4040;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
