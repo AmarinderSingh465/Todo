@@ -11,10 +11,6 @@ body {
     margin-bottom: 20px;
   }
   
-  .flex-item-first
-  {
-
-  }
   .flex-container-row {
     display: flex;
     flex-wrap: nowrap;
@@ -38,9 +34,11 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-   
+    border: black solid 5px;
   }
- 
+  .member-links {
+  align-items: center;
+  }
   
   .member-name {
     color: White;
@@ -50,15 +48,15 @@ body {
   }
   .member-details {
     color: #ffffff;
+    padding-bottom: 10px;
   }
   .member-role {
     font-size: 25px;
     color: #f7f7f7;
+    padding-bottom: 10px;
   }
   
-  .member-links {
-    align-self: flex-end;
-  }
+
   
   /* Media queries for responsive design */
   @media (max-width: 1024px) {
