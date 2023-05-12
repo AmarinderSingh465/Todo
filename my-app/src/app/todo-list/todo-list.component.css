@@ -5,6 +5,11 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
 }
+.box
+{
+ 
+  padding: 5px;
+}
 
 form {
   display: flex;
