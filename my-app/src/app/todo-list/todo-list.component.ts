@@ -28,6 +28,7 @@ export class TodoListComponent implements OnInit {
     if (this.newTodo.trim() !== '') {
       this.todos.push({ title: this.newTodo, completed: false });
       this.newTodo = '';
+      this.search();
     }
   }
 
