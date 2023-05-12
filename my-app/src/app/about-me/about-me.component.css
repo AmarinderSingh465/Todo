@@ -69,6 +69,31 @@ body {
       min-width: 300px;
     }
   }
+
+  @media (max-width: 768px) {
+    .flex-container-row {
+      flex-direction: column;
+    }
+    .flex-item {
+      width: 100%;
+    }
+    .member-info {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px;
+    }
+    .member-name {
+      font-size: 24px;
+    }
+    .member-role {
+      font-size: 20px;
+    }
+  }
   
   @media (max-width: 768px) {
     .flex-container-row {
