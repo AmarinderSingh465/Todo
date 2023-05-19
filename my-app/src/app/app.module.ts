@@ -11,6 +11,7 @@ import { LoginComponent } from './Features/login/login.component';
 import { RegisterComponent } from './Features/login/register/register.component';
 import { environment } from 'src/environments/environment';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     LoginComponent,
     RegisterComponent,
     AboutMeComponent,
+    HelloWorldComponent,
     
   ],
   imports: [

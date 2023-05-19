@@ -4,6 +4,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { RegisterComponent } from './Features/login/register/register.component';
 import { LoginComponent } from './Features/login/login.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 const routes: Routes = [
 
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutMeComponent
+  },
+  {
+    path: 'hellowworld',
+    component: HelloWorldComponent
   },
   {
     path: '',
