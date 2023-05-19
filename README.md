@@ -9,12 +9,12 @@ Armen
 Rita Simon
 Project setup
 
-## Project Setup
+## Project Setup To install Firebase and Angular 
 
 ```sh
-npm install
 npm install -g @angular/cli
-npm install firebase
+npm install -g firebase-tools.
+npm install firebase @angular/fire
 ```
 
 ## Compile and Hot-Reload for Development
